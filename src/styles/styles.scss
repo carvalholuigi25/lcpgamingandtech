@@ -1,0 +1,231 @@
+* { padding: 0; margin: 0; white-space: normal; word-wrap: break-word; word-break: break-all; box-sizing: border-box; }
+
+html, body {  min-height: 100vh; scroll-behavior: smooth; }
+
+body {
+    background: white;
+    color: black;
+    padding: 0; 
+    margin: 0; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    word-break: break-all; 
+    box-sizing: border-box;
+}
+
+header, .header {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+section, .section {
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer, .footer {
+    display: block;
+    padding: 2rem 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer *, .footer * {
+    margin: 0;
+}
+
+.main, #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: #194a10;
+}
+
+.mainp, #mainp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    min-height: 50vh;
+    max-height: 100vh;
+    background: #194a10;
+}
+
+.navbar, .footer, footer {
+    background: rgba(0, 0, 0, 1) !important;
+    color: lightgreen;
+}
+
+.navbar *, .footer *, footer * {
+    color: lightgreen;
+}
+
+.navbar .active {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: white !important;
+    font-weight: bold;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    background-color: black !important;
+    border-color: lightgreen !important;
+    color: lightgreen !important;
+}
+
+form input::placeholder {
+    color: lightgreen !important;
+}
+
+.btn-search {
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: auto;
+    right: 0px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-color: lightgreen;
+    color: lightgreen;
+}
+
+.btn-search * {
+    border-color: inherit;
+    color: inherit;
+}
+
+.mainlogo {
+    width: 20vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section:not(.main) {
+    margin: 0 auto;
+    padding: 25rem 15px;
+}
+
+.section.main *, .section.mainp * {
+    color: white;
+}
+
+.btntognav {
+    color: lightgreen;
+}
+
+.btntognav * {
+    color: inherit;
+}
+
+.tformatted, .tfrm {
+    text-align: inherit;
+    line-height: 2rem;
+}
+
+footer ul, footer ol {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 15px auto;
+    padding: 0;
+    text-align: inherit;
+}
+
+footer ul li a, footer ol li a {
+    text-decoration: none;
+}
+
+footer li a:hover, footer li a:active, 
+footer li a:focus-visible, footer li a:focus-within, 
+footer li a:visited {
+    text-decoration: none;
+}
+
+ul li, ol li {
+    list-style-position: inside;
+}
+
+.listsn li {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.listsn li a {
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.listsn li a:hover, .listsn li a:active, 
+.listsn li a:focus-visible, .listsn li a:focus-within, 
+.listsn li a:visited {
+    text-decoration: none;
+}
+
+.listsn li a i {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listsn li a i.bi-discord {
+    background-color: #7289da;
+    color: white;
+}
+
+.text-left, .t-left { text-align: left !important; }
+.text-center, .t-center { text-align: center !important; }
+.text-right, .t-right { text-align: right !important; }
+
+.tns-nav { display: none; }
+
+.icotitle {
+    font-size: 4rem;
+}
+
+.section:not(.main) .icotitle {
+    font-size: 8rem;
+}
+
+@media all and (max-width: 767px) {
+    .navbar .nav-link {
+        margin: 5px auto;
+    }
+
+    .navbar form {
+        margin: 5px auto; 
+    }
+
+    .copyright {
+        padding-top: 0px;
+    }
+
+    .copyright, .copyright * {
+        text-align: center;
+        margin: 15px auto 0px auto;
+    }
+
+    .section:not(.main) .icotitle {
+        font-size: 4rem;
+    }
+}

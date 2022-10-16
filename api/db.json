@@ -1,0 +1,121 @@
+{
+    "games": [
+        {
+            "id": 1,
+            "title": "GTA San Andreas",
+            "desc": "Grand Theft Auto: San Andreas é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. É o quinto título principal da série Grand Theft Auto e foi lançado em outubro de 2004 para PlayStation 2 e em junho de 2005 para Xbox e Microsoft Windows.",
+            "platforms": "PC,Xbox,PS2,Xbox360,PS3,Xbox One,PS4,Xbox Series X|S,PS5,Switch",
+            "dateRelease": "2004-10-26T00:00:00",
+            "cover": "assets/images/covers/games/gtasa.jpg",
+            "company": "Rockstar North",
+            "publisher": "Rockstar Games",
+            "rate": 10,
+            "featured": true,
+            "trailers": [
+                "https://www.youtube.com/watch?v=yOzcbtsw_pQ"
+            ],
+            "screenshots": [
+                "assets/images/covers/games/gtasa.jpg"
+            ],
+            "linksPurchase": [
+                {
+                    "name": "rockstar_games",
+                    "link": "https://store.rockstargames.com/game/buy-grand-theft-auto-the-trilogy-the-definitive-edition"
+                }
+            ],
+            "companyId": 1
+        },
+        {
+            "id": 2,
+            "title": "Far Cry 6",
+            "desc": "Far Cry 6 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Ubisoft Toronto e publicado pela Ubisoft. É o sexto título principal da série Far Cry e foi lançado em 7 de outubro de 2021 para Amazon Luna, Google Stadia, Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One e Xbox Series X/S.",
+            "platforms": "PC,PS4,Xbox One,Xbox Series X|S,PS5",
+            "dateRelease": "2021-10-06T00:00:00",
+            "cover": "assets/images/covers/games/farcry6.webp",
+            "company": "Ubisoft",
+            "publisher": "Ubisoft",
+            "rate": 8,
+            "featured": true,
+            "trailers": [
+                "https://www.youtube.com/watch?v=-IJuKT1mHO8"
+            ],
+            "screenshots": [
+                "assets/images/covers/games/farcry6.webp"
+            ],
+            "linksPurchase": [
+                {
+                    "name": "ubisoft_store",
+                    "link": "https://store.ubi.com/us/far-cry-6/5ecd2cac5cdf9a1528a8c1d2.html?lang=en_US"
+                }
+            ],
+            "companyId": 2
+        },
+        {
+            "id": 3,
+            "title": "Dragon Ball Xenoverse 2",
+            "desc": "Dragon Ball Xenoverse 2 é um jogo de videogame do gênero de luta e de RPG; desenvolvido pela Dimps e publicado pela Bandai Namco Entertainment. Baseado na franquia Dragon Ball, é uma sequência de Dragon Ball Xenoverse. O jogo foi anunciado em 17 de maio de 2016 para PC, Xbox One e PlayStation 4.",
+            "platforms": "PC,PS4,Xbox One,Xbox Series X|S,PS5",
+            "dateRelease": "2016-05-17T00:00:00",
+            "cover": "assets/images/covers/games/dbxenoverse2.jpg",
+            "company": "Bandai Namco",
+            "publisher": "Bandai Namco",
+            "rate": 9,
+            "featured": true,
+            "trailers": [
+                "https://www.youtube.com/watch?v=JnUbg-9v_bE"
+            ],
+            "screenshots": [
+                "assets/images/covers/games/dbxenoverse2.jpg"
+            ],
+            "linksPurchase": [
+                {
+                    "name": "steam",
+                    "link": "https://store.steampowered.com/app/454650/DRAGON_BALL_XENOVERSE_2/"
+                }
+            ],
+            "companyId": 3
+        },
+        {
+            "id": 4,
+            "title": "GTA IV Complete Edition",
+            "desc": "Niko Bellic, Johnny Klebitz e Luis Lopez têm uma coisa em comum: vivem na pior cidade da América. Liberty City venera o dinheiro e o estatuto social e é um paraíso para aqueles que os possuem e um verdadeiro pesadelo para os restantes.",
+            "platforms": "PC,Xbox 360,PS3",
+            "dateRelease": "2010-10-27T00:00:00",
+            "cover": "assets/images/covers/games/gtaivce.webp",
+            "company": "Rockstar North",
+            "publisher": "Rockstar Games",
+            "rate": 7,
+            "featured": true,
+            "trailers": [
+                "https://www.youtube.com/watch?v=ZQzIZkxsWYw"
+            ],
+            "screenshots": [
+                "assets/images/covers/games/gtaivce.webp"
+            ],
+            "linksPurchase": [
+                {
+                    "name": "steam",
+                    "link": "https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_The_Complete_Edition/"
+                }
+            ],
+            "companyId": 1
+        }
+    ],
+    "companies": [
+        {
+            "id": 1,
+            "name": "Rockstar Games",
+            "image": "assets/images/logos/rockstargames.png"
+        },
+        {
+            "id": 2,
+            "name": "Ubisoft",
+            "image": "assets/images/logos/ubisoft.svg"
+        },
+        {
+            "id": 3,
+            "name": "Bandai Namco",
+            "image": "assets/images/logos/bandainamco.png"
+        }
+    ]
+}

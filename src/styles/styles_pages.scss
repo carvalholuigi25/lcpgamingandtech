@@ -1,0 +1,457 @@
+* { padding: 0; margin: 0; white-space: normal; word-wrap: break-word; word-break: break-all; box-sizing: border-box; }
+
+html, body {  min-height: 100vh; scroll-behavior: smooth; }
+
+body {
+    background: #0F121B;
+    color: white;
+    padding: 0; 
+    margin: 0; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    word-break: break-all; 
+    box-sizing: border-box;
+}
+
+header, .header {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+section, .section {
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer, .footer {
+    display: block;
+    padding: 2rem 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer *, .footer * {
+    margin: 0;
+}
+
+.main, #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: #194a10;
+}
+
+.mainp, #mainp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    min-height: 50vh;
+    max-height: 100vh;
+    background: #194a10;
+}
+
+.navbar, .footer, footer {
+    background: rgba(0, 0, 0, 1) !important;
+    color: lightgreen;
+}
+
+.navbar *, .footer *, footer * {
+    color: lightgreen;
+}
+
+.navbar .active {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: white !important;
+    font-weight: bold;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    background-color: black !important;
+    border-color: lightgreen !important;
+    color: lightgreen !important;
+}
+
+form input::placeholder {
+    color: lightgreen !important;
+}
+
+.btn-search {
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: auto;
+    right: 0px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-color: lightgreen;
+    color: lightgreen;
+}
+
+.btn-search * {
+    border-color: inherit;
+    color: inherit;
+}
+
+.mainlogo {
+    width: 20vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section:not(.main) {
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+.section.main *, .section.mainp * {
+    color: white;
+}
+
+.btntognav {
+    color: lightgreen;
+}
+
+.btntognav * {
+    color: inherit;
+}
+
+.tformatted, .tfrm {
+    text-align: inherit;
+    line-height: 2rem;
+}
+
+.carousel {
+    border: 1px solid;
+    border-radius: 25px;
+    margin: 15px auto;
+}
+
+.carousel .carousel-inner {
+    border-radius: inherit;
+}
+
+.carousel img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(1200px / 2);
+    object-fit: cover;
+    object-position: top center;
+    aspect-ratio: 16 / 9;
+}
+
+.section .title {
+    display: block;
+    text-align: left;
+}
+
+.recommended, .originals {
+    display: block;
+    margin: 15px auto;
+}
+
+.recommended .title, .originals .title {
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.recommended img, .originals img {
+    margin: 15px auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 15px 5px #000000; 
+    box-shadow: 3px 3px 15px 5px #000000;
+}
+
+.my-slider {
+    padding: 15px 100px;
+}
+
+.colrec, .colorig {
+    position: relative;
+    overflow: hidden;
+}
+
+.colrec img, .colorig img {
+    transition: 0.5s all ease-in-out;
+}
+
+.colrec .status, .colorig .status {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 12px;
+    bottom: auto;
+    margin-top: 15px;
+    text-transform: uppercase;
+    background: rgb(2, 255, 2);
+    z-index: 9999;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.colrec .status:hover, .colorig .status:hover {
+    background-color: black;
+    color: rgb(2, 255, 2);
+}
+
+.colrec:hover, .colorig:hover {
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 15px 5px rgb(2, 255, 2); 
+    box-shadow: 3px 3px 15px 5px rgb(2, 255, 2);
+}
+
+.colrec:hover img, .colorig:hover img {
+    transform: scale(1.5);
+}
+
+.colrec.tns-item .status, .colorig.tns-item .status {
+    right: 0px;
+    bottom: auto;
+    font-size: 10px;
+}
+
+.colrec:hover .status, .colorig:hover .status {
+    top: -15px;
+}
+
+.cardcomp {
+    margin: 15px auto;
+    border: 0;
+    border: 5px solid #333541;
+    border-radius: 25px;
+    background-color: #242430;
+    -webkit-box-shadow: 3px 3px 15px 5px #000000; 
+    box-shadow: 3px 3px 15px 5px #000000;
+    overflow: hidden;
+}
+
+.cardcomp img {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 15px;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    aspect-ratio: auto;
+    transition: 0.5s all ease-in-out;
+}
+
+.cardcomp:hover {
+    background-color: white;
+}
+
+.cardcomp:hover img {
+    transform: scale(1.5);
+}
+
+.tns-nav { display: none; }
+
+/* .tns-item {
+    border: 1px solid;
+    border-radius: 25px;
+    background: rgb(48, 48, 48);
+    text-align: center;
+}
+
+.tns-item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.tns-item img {
+    padding: 15px;
+} */
+
+footer ul, footer ol {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 15px auto;
+    padding: 0;
+    text-align: inherit;
+}
+
+footer ul li a, footer ol li a {
+    text-decoration: none;
+}
+
+footer li a:hover, footer li a:active, 
+footer li a:focus-visible, footer li a:focus-within, 
+footer li a:visited {
+    text-decoration: none;
+}
+
+ul li, ol li {
+    list-style-position: inside;
+}
+
+.listsn li {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.listsn li a {
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.listsn li a:hover, .listsn li a:active, 
+.listsn li a:focus-visible, .listsn li a:focus-within, 
+.listsn li a:visited {
+    text-decoration: none;
+}
+
+.listsn li a i {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listsn li a i.bi-discord {
+    background-color: #7289da;
+    color: white;
+}
+
+.text-left, .t-left { text-align: left !important; }
+.text-center, .t-center { text-align: center !important; }
+.text-right, .t-right { text-align: right !important; }
+
+.colleft { float: left; }
+.colcenter { float: none; }
+.colright { float: right; }
+.colflexcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.colflexleft { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+.colflexcenter { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.colflexright { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+
+.icotitle {
+    font-size: 4rem;
+}
+
+select { 
+    width: auto; 
+    max-width: 100%; 
+    background-color: inherit; 
+    color: inherit;
+    border-color: inherit; 
+}
+
+.lang, #lang {
+    width: auto !important;
+    margin: 0;
+    background: transparent;
+    color: lightgreen;
+    border-color: inherit;
+}
+
+.lang option, #lang option {
+    background: black;
+    color: lightgreen;
+    border-color: inherit;
+}
+
+@media all and (max-width: 992px) {
+    .cardcomp img {
+        height: auto;
+    }
+
+    .lang, #lang {
+        margin: 0;
+    }
+
+    .my-slider {
+        padding: 15px 0px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .navbar .nav-link {
+        margin: 5px auto;
+    }
+
+    .navbar form {
+        margin: 5px auto; 
+    }
+
+    .copyright {
+        padding: 2rem 15px;
+    }
+
+    .copyright, .copyright * {
+        text-align: center;
+    }
+
+    .cardcomp img {
+        height: auto;
+    }
+
+    .lang, #lang {
+        margin: auto auto;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .copyright {
+        padding: 2rem 15px;
+    }
+
+    .copyright, .copyright * {
+        text-align: center;
+    }
+
+    .cardcomp img {
+        height: auto;
+    }
+
+    .lang, #lang {
+        margin: auto auto;
+    }
+}
